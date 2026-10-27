@@ -1,7 +1,7 @@
 ---
 advisories:
 - affected_versions:
-  - '>0.24'
+  - '>=0.13'
   cves:
   - CVE-2012-6143
   description: |
