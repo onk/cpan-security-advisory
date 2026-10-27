@@ -1,7 +1,7 @@
 ---
 advisories:
   - affected_versions:
-      - '<=0.8.4'
+      - '>0'
     cves:
       - CVE-2025-40906
       - CVE-2017-14227
