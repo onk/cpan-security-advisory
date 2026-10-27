@@ -1,7 +1,7 @@
 ---
 advisories:
 - affected_versions:
-  - <=2.7
+  - '>0'
   cves:
   - CVE-2008-3285
   description: |
