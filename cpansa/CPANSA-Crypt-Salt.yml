@@ -1,7 +1,7 @@
 ---
 advisories:
   - affected_versions:
-      - <=0.01
+      - '>0'
     cves:
       - CVE-2025-1805
     description: Crypt::Salt for Perl version 0.01 uses insecure rand() function when generating salts for cryptographic purposes.
