@@ -50,13 +50,13 @@ advisories:
   reported: 2008-12-01
   severity: ~
 - affected_versions:
-  - "==1.08"
-  - "==2.07"
+  - '<2.07_02'
   cves:
   - CVE-2008-5302
   description: |
     Race condition in the rmtree function in File::Path 1.08 and 2.07 (lib/File/Path.pm) in Perl 5.8.8 and 5.10.0 allows local users to create arbitrary setuid binaries via a symlink attack, a different vulnerability than CVE-2005-0448, CVE-2004-0452, and CVE-2008-2827. NOTE: this is a regression error related to CVE-2005-0448.  It is different from CVE-2008-5303 due to affected versions.
-  fixed_versions: []
+  fixed_versions:
+  - '>=2.07_02'
   github_security_advisory:
   - GHSA-8vc4-5x78-9hxf
   id: CPANSA-File-Path-2008-5302
@@ -142,12 +142,13 @@ advisories:
   reported: 2005-05-02
   severity: ~
 - affected_versions:
-  - '>=1.06,<=1.404'
+  - '<1.07'
   cves:
   - CVE-2004-0452
   description: |
     Race condition in the rmtree function in the File::Path module in Perl 5.6.1 and 5.8.4 sets read/write permissions for the world, which allows local users to delete arbitrary files and directories, and possibly read files and directories, via a symlink attack.
-  fixed_versions: []
+  fixed_versions:
+  - '>=1.07'
   github_security_advisory:
   - GHSA-27g6-7ffq-cf4w
   id: CPANSA-File-Path-2004-0452
