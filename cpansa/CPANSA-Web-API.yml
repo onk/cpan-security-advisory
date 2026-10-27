@@ -1,15 +1,14 @@
 ---
 advisories:
 - affected_versions:
-  - <=2.8
+  - '>0'
   cves:
   - CVE-2024-57868
   description: Web::API 2.8 and earlier for Perl uses the rand() function as the default
     source of entropy, which is not cryptographically secure, for cryptographic functions.  Specifically
     Web::API uses the Data::Random library which specifically states that it is "Useful
     mostly for test programs". Data::Random uses the rand() function.
-  fixed_versions:
-  - '>2.8'
+  fixed_versions: []
   github_security_advisory: []
   id: CPANSA-Web-API-2024-57868
   references:
